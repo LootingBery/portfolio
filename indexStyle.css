@@ -1,0 +1,17 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: coral;
+}
+.navBar {
+  background-color: #333;
+  overflow: hidden;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+}
