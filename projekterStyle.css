@@ -4,6 +4,12 @@ body {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #fcf9ea, #fff0dd, #c0cfe2);
+  background-image: linear-gradient(
+    to bottom,
+    #7b542f,
+    #b6771d,
+    #ff9d00,
+    #ffcf71
+  );
   cursor: crosshair;
 }

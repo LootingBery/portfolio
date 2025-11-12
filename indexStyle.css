@@ -6,28 +6,28 @@ body {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #fcf9ea, #fff0dd, #c0cfe2);
+  background-image: linear-gradient(
+    to bottom,
+    #fff2e0,
+    #c0c9ee,
+    #a2aadb,
+    #898ac4
+  );
   cursor: crosshair;
 }
 .navBar {
   background-color: black;
   overflow: hidden;
   color: rgb(255, 255, 255);
-  padding: 14px 20px;
+  padding: 18px 20px;
   text-align: center;
   transition: transform 0.8s, color 0.5s;
   border-radius: 0 0 8px 8px;
   width: 7%;
   margin: auto;
 }
-.kontaktContainer {
-  text-align: center;
-  font-family: "fantasy", Impact;
-  font-size: 18px;
-  color: #fcf9ea;
-}
-.navBar:hover,
-.kontaktContainer {
+
+.navBar:hover {
   transform: scale(6);
   transition: transform 1.5s, color 0.5s;
   border-color: bisque;
@@ -85,6 +85,17 @@ h4 {
   padding: 20px;
   margin: auto;
 }
+
+@keyframes infoFade {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .omMig,
 .Projekter,
 .Kompetencer {
@@ -95,6 +106,7 @@ h4 {
   height: 325px;
   background-color: lightgrey;
   cursor: crosshair;
+  animation: 1.5s infoFade;
 }
 .omMig:hover,
 .Projekter:hover,
@@ -125,4 +137,31 @@ h4 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 30%;
   transition: transform 0.3s;
+}
+.Kompetencer:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #473472,
+    #53629e,
+    #87bac3,
+    #d6f4ed
+  );
+}
+.omMig:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #ecf4e8,
+    #cbf3bb,
+    #abe7b2,
+    #93bfc7
+  );
+}
+.Projekter:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #7b542f,
+    #b6771d,
+    #ff9d00,
+    #ffcf71
+  );
 }
