@@ -139,7 +139,7 @@ h4 {
   transition: transform 0.3s;
 }
 .Kompetencer:hover {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   background-image: linear-gradient(
     to bottom,
     #473472,
@@ -149,7 +149,7 @@ h4 {
   );
 }
 .omMig:hover {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   background-image: linear-gradient(
     to bottom,
     #ecf4e8,
@@ -159,7 +159,7 @@ h4 {
   );
 }
 .Projekter:hover {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   background-image: linear-gradient(
     to bottom,
     #7b542f,
