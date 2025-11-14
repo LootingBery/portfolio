@@ -25,6 +25,7 @@ body {
   border-radius: 0 0 8px 8px;
   width: 7%;
   margin: auto;
+  user-select: none;
 }
 
 .navBar:hover {
@@ -32,7 +33,7 @@ body {
   transition: transform 1.5s, color 0.5s;
   border-color: bisque;
   border-radius: 0 0 8px 8px;
-
+  user-select: none;
   font-family: "fantasy", Impact;
 }
 h2 {
@@ -41,6 +42,7 @@ h2 {
   font-size: xx-large;
   font: 50px "fantasy", Impact;
   animation: 2s fade;
+  user-select: none;
 }
 h4 {
   color: rgb(110, 106, 106);
@@ -49,6 +51,7 @@ h4 {
   font: 25px "fantasy", Impact;
   animation: 2s fade;
   padding: 1%;
+  user-select: none;
 }
 .header {
   color: rgb(110, 106, 106);
@@ -57,6 +60,7 @@ h4 {
   font-size: xx-large;
   font: 100px "fantasy", Impact;
   animation: 1.5s headerFade;
+  user-select: none;
 }
 @keyframes headerFade {
   0% {
@@ -84,6 +88,7 @@ h4 {
   justify-content: space-around;
   padding: 20px;
   margin: auto;
+  user-select: none;
 }
 
 @keyframes infoFade {
@@ -96,60 +101,46 @@ h4 {
     opacity: 1;
   }
 }
+/* Tekst */
+.ommig,
+.projekt,
+.kompetence {
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 110px;
+  font: 60px "fantasy", Impact;
+  color: white;
+  user-select: none;
+}
+/* Box */
 .omMig,
 .Projekter,
 .Kompetencer {
+  left: 1.5%;
   display: inline-block;
-  position: relative;
   margin: 1%;
   width: 23%;
   height: 325px;
-  background-color: lightgrey;
   cursor: crosshair;
   animation: 1.5s infoFade;
+  user-select: none;
 }
 .omMig:hover,
 .Projekter:hover,
 .Kompetencer:hover {
   transform: scale(1.05);
+  transform: translateY(-20%);
   transition: transform 0.3s;
+  user-select: none;
+}
+.omMig:active,
+.Projekter:active,
+.Kompetencer:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+  user-select: none;
 }
 .omMig {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  transition: transform 0.3s;
-}
-.Projekter {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  transition: transform 0.3s;
-}
-.Kompetencer {
-  background-color: #e9e9e9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  transition: transform 0.3s;
-}
-.Kompetencer:hover {
-  transition-delay: 0.1s;
-  background-image: linear-gradient(
-    to bottom,
-    #473472,
-    #53629e,
-    #87bac3,
-    #d6f4ed
-  );
-}
-.omMig:hover {
-  transition-delay: 0.1s;
   background-image: linear-gradient(
     to bottom,
     #ecf4e8,
@@ -157,9 +148,13 @@ h4 {
     #abe7b2,
     #93bfc7
   );
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s;
 }
-.Projekter:hover {
-  transition-delay: 0.1s;
+.Projekter {
   background-image: linear-gradient(
     to bottom,
     #7b542f,
@@ -167,4 +162,23 @@ h4 {
     #ff9d00,
     #ffcf71
   );
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s;
+}
+.Kompetencer {
+  background-image: linear-gradient(
+    to bottom,
+    #473472,
+    #53629e,
+    #87bac3,
+    #d6f4ed
+  );
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.3s;
 }
