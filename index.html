@@ -9,7 +9,19 @@
   </head>
   <body>
     <main>
-      <nav class="navBar"></nav>
+      <nav class="navBar">
+        <div class="navText">
+          <div class="kontakt">
+            kontakt mig!
+            <div class="billede">
+              <img
+                src="benjaminR.jpg"
+                alt="Kontankt billede af Benjamin Ryborg"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="header">
         <h1>Benjamin Ryborg</h1>
         <h2>Programmør</h2>
@@ -17,13 +29,42 @@
       </div>
 
       <div class="infoBox">
-        <a class="Projekter" href="Projekter.html"
-          ><p class="projekt">Projekter</p></a
-        >
-        <a class="omMig" href="omMig.html"><p class="ommig">Om Mig</p></a>
-        <a class="Kompetencer" href="Kompetencer.html"
-          ><p class="kompetence">Kompetencer</p></a
-        >
+        <div class="flip-card Projekter">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <p class="projekt">GitHub</p>
+            </div>
+            <div class="flip-back">
+              <a href="https://github.com/LootingBery" target="_blank">
+                <img src="github.jpg" alt="GitHub Logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card omMig">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <p class="ommig">Om Mig</p>
+            </div>
+            <div class="flip-back">
+              <a href="omMig.html">
+                <img src="benjaminR.jpg" alt="Benjamin Ryborg" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card Kompetencer">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <p class="kompetence">Kompetencer</p>
+            </div>
+            <div class="flip-back">
+              <img src="kompetence.jpg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
