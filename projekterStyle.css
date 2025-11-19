@@ -2,14 +2,37 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 170%;
   font-family: Arial, sans-serif;
   background-image: linear-gradient(
     to bottom,
-    #7b542f,
-    #b6771d,
-    #ff9d00,
-    #ffcf71
+    #ecf4e8,
+    #cbf3bb,
+    #abe7b2,
+    #93bfc7
   );
   cursor: crosshair;
+}
+.header {
+  color: rgb(110, 106, 106);
+  text-align: center;
+  padding: 1px;
+  font-size: xx-large;
+  font: 100px "fantasy", Impact;
+  user-select: none;
+}
+.horizontalDivider {
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin: 1px auto;
+  border: 5px solid rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
+}
+.verticalDivider {
+  width: 0.01%;
+  min-height: 200vh;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin: 1px auto;
+  border: 5px solid rgba(128, 128, 128, 0.5);
+  border-radius: 8px;
 }
