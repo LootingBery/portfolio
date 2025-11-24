@@ -16,67 +16,6 @@ body {
   cursor: crosshair;
 }
 
-.navBar {
-  position: relative;
-  overflow: visible;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 0 0 8px 8px;
-  width: 7%;
-  margin: auto;
-  user-select: none;
-  z-index: 1;
-}
-
-.navText {
-  position: relative;
-  width: 100%;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navBar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: black;
-  border-radius: inherit;
-  transform: scale(1);
-  transform-origin: top center;
-  transition: transform 0.8s;
-  z-index: -1;
-}
-
-.navBar:hover::before {
-  transform: scale(6);
-  transition-duration: 1.5s;
-}
-
-.kontakt {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.navBar:hover .kontakt,
-.billede {
-  opacity: 1;
-  visibility: visible;
-}
-
-.billede {
-  float: right;
-  user-select: none;
-  border-radius: 50%;
-}
-
 h2 {
   color: rgb(110, 106, 106);
   text-align: center;
@@ -115,18 +54,6 @@ h4 {
     transform: translateY(0%);
     opacity: 1;
   }
-}
-
-.footerLine {
-  background-color: rgb(88, 88, 88);
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  margin-top: auto;
-  left: 0;
-  bottom: 0;
-  position: fixed;
 }
 
 @keyframes infoFade {
@@ -218,7 +145,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #000000;
   cursor: crosshair;
   color: rgb(0, 0, 0);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
