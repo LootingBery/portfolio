@@ -15,7 +15,6 @@ body {
   user-select: none;
 }
 .back-button {
-  padding: 10px 20px;
   color: #333;
   text-decoration: none;
   border-radius: 5px;
@@ -116,4 +115,12 @@ body {
 }
 .timeline-row.right .timeline-content.image {
   order: 3;
+}
+.heads-up {
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 10px;
+  font: 25px "fantasy", Impact;
+  color: rgb(82, 72, 72);
+  user-select: none;
 }
